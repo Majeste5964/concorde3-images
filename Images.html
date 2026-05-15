@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque d'Images - Concorde 3 S.A.</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'DM Sans', sans-serif; background: #f4f6f9; color: #1e293b; padding: 2rem 1rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header { margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 2px solid #e2e8f0; }
+        header h1 { font-size: 2rem; font-weight: 700; color: #0f172a; }
+        header p  { color: #64748b; margin-top: .4rem; font-size: .95rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+        .card { background: #fff; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 1px 4px rgba(0,0,0,.05); overflow: hidden; transition: box-shadow .2s; }
+        .card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+        .card-header { padding: .75rem 1.1rem; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid #f1f5f9; }
+        .card-img { width: 100%; height: 180px; object-fit: cover; display: block; background: #f8fafc; }
+        .card-img.contain { object-fit: contain; padding: 1.5rem; height: 140px; }
+        .card-footer { padding: .6rem 1.1rem; font-size: .7rem; font-family: monospace; color: #94a3b8; background: #fafafa; border-top: 1px solid #f1f5f9; word-break: break-all; }
+        .c-blue   { color: #2563eb; }
+        .c-green  { color: #16a34a; }
+        .c-indigo { color: #4f46e5; }
+        .c-orange { color: #ea580c; }
+        .c-slate  { color: #475569; }
+        .c-yellow { color: #ca8a04; }
+        .c-rose   { color: #e11d48; }
+        .span2 { grid-column: span 2; }
+        @media (max-width: 640px) { .span2 { grid-column: span 1; } }
+        .it-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; padding: 1rem; }
+        @media (max-width: 500px) { .it-grid { grid-template-columns: 1fr; } }
+        .it-grid img { width: 100%; height: 140px; object-fit: cover; border-radius: 10px; display: block; background: #f8fafc; }
+        .it-grid p { font-size: .65rem; font-family: monospace; color: #94a3b8; margin-top: .35rem; word-break: break-all; }
+        footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; text-align: center; }
+        footer a { color: #475569; text-decoration: none; font-size: .9rem; font-weight: 600; }
+        footer a:hover { color: #4f46e5; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1>Assets Visuels</h1>
+        <p>Bibliothèque d'images — Concorde 3 S.A.</p>
+    </header>
+
+    <div class="grid">
+
+        <!-- IDENTITÉ VISUELLE -->
+        <div class="card">
+            <div class="card-header c-blue">Identité Visuelle</div>
+            <img class="card-img contain"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/IMG-20260318-031525-135.jpg"
+                alt="Logo Concorde 3 S.A."
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">IMG-20260318-031525-135.jpg</div>
+        </div>
+
+        <!-- AGRICULTURE -->
+        <div class="card">
+            <div class="card-header c-green">Secteur Agriculture</div>
+            <img class="card-img"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-20260205-114304.jpg"
+                alt="Agriculture"
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">Screenshot-20260205-114304.jpg</div>
+        </div>
+
+        <!-- INFORMATIQUE -->
+        <div class="card span2">
+            <div class="card-header c-indigo">Informatique, Réseaux &amp; E-commerce</div>
+            <div class="it-grid">
+                <div>
+                    <img src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-06-02-20-33.png"
+                        alt="IT 1" onerror="this.style.opacity='.2'">
+                    <p>Screenshot-2026-02-06-02-20-33.png</p>
+                </div>
+                <div>
+                    <img src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-06-02-13-16.png"
+                        alt="IT 2" onerror="this.style.opacity='.2'">
+                    <p>Screenshot-2026-02-06-02-13-16.png</p>
+                </div>
+                <div>
+                    <img src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-07-13-52-54.png"
+                        alt="IT 3" onerror="this.style.opacity='.2'">
+                    <p>Screenshot-2026-02-07-13-52-54.png</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMERCE & HORECA -->
+        <div class="card">
+            <div class="card-header c-orange">Commerce &amp; Horeca</div>
+            <img class="card-img"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Capture%20d%27%C3%A9cran%202026-05-15%20173517.png"
+                alt="Commerce Horeca"
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">Capture d'écran 2026-05-15 173517.png</div>
+        </div>
+
+        <!-- IMMOBILIER -->
+        <div class="card">
+            <div class="card-header c-slate">Gestion Immobilière</div>
+            <img class="card-img contain"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-06-03-57-26.png"
+                alt="Immobilier"
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">Screenshot-2026-02-06-03-57-26.png</div>
+        </div>
+
+        <!-- ÉNERGIE -->
+        <div class="card">
+            <div class="card-header c-yellow">Énergies Renouvelables</div>
+            <img class="card-img"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-06-02-51-03.png"
+                alt="Énergie"
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">Screenshot-2026-02-06-02-51-03.png</div>
+        </div>
+
+        <!-- ARTISANAT -->
+        <div class="card">
+            <div class="card-header c-rose">Artisanat &amp; Cosmétique</div>
+            <img class="card-img"
+                src="https://raw.githubusercontent.com/Majeste5964/concorde3-images/main/Screenshot-2026-02-06-03-49-07.png"
+                alt="Artisanat"
+                onerror="this.style.opacity='.2'">
+            <div class="card-footer">Screenshot-2026-02-06-03-49-07.png</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="index.html">← Retour à l'accueil</a>
+    </footer>
+
+</div>
+</body>
+</html>
